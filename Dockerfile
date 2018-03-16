@@ -1,7 +1,7 @@
 FROM golang:latest
-MAINTAINER bhaavanmerchant@gmail.com
+MAINTAINER peter@jankovsky.me
 
-RUN apt-get -y update && apt-get install -y openjdk-7-jre-headless
+RUN apt-get -y update && apt-get install -y openjdk-8-jre-headless
 
 RUN go get -d -u github.com/google/battery-historian
 WORKDIR /go/src/github.com/google/battery-historian
